@@ -21,7 +21,7 @@ then
     cd temp
     git clone http://aur.archlinux.org/yay-bin.git
     cd yay-bin
-    echo makepkg -si
+    makepkg -si
     cd ../../
     rm -rf temp
 else
@@ -34,7 +34,7 @@ yay -S fzf
 yay -S zoxide
 yay -S neovim
 yay -S nextcloud-client
-yay -S oh-my-posh
+yay -S oh-my-posh-bin
 yay -S waybar
 yay -S network-manager-applet
 yay -S hyprpaper
@@ -54,8 +54,10 @@ yay -S base-devel
 yay -S brightnessctl
 yay -S zip
 yay -S unzip
-yay -S peazip
+# yay -S peazip
 yay -S ufw
+yay -S less
+yay -S lazygit
 
 
 cd ~
